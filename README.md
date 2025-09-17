@@ -230,38 +230,44 @@ Add to your MCP client these settings.
 
 **For pipx installation (recommended):**
 ```json
-"mcpServers": {
-    "imagesorcery-mcp": {
-      "command": "imagesorcery-mcp",
-      "transportType": "stdio",
-      "autoApprove": ["blur", "change_color", "config", "crop", "detect", "draw_arrows", "draw_circles", "draw_lines", "draw_rectangles", "draw_texts", "fill", "find", "get_metainfo", "ocr", "overlay", "resize", "rotate"],
-      "timeout": 100
-    }
+{
+ "mcpServers": {
+      "imagesorcery-mcp": {
+        "command": "imagesorcery-mcp",
+        "transportType": "stdio",
+        "autoApprove": ["blur", "change_color", "config", "crop", "detect", "draw_arrows", "draw_circles", "draw_lines", "draw_rectangles", "draw_texts", "fill", "find", "get_metainfo", "ocr", "overlay", "resize", "rotate"],
+        "timeout": 100
+      }
+  }
 }
 ```
 
 **For manual venv installation:**
 ```json
-"mcpServers": {
+{
+ "mcpServers": {
     "imagesorcery-mcp": {
       "command": "/full/path/to/venv/bin/imagesorcery-mcp",
       "transportType": "stdio",
       "autoApprove": ["blur", "change_color", "config", "crop", "detect", "draw_arrows", "draw_circles", "draw_lines", "draw_rectangles", "draw_texts", "fill", "find", "get_metainfo", "ocr", "overlay", "resize", "rotate"],
       "timeout": 100
     }
+ }
 }
 ```
 <details>
 <summary>If you're using the server in HTTP mode, configure your client to connect to the HTTP endpoint:</summary>
 
 ```json
-"mcpServers": {
+{
+ "mcpServers": {
     "imagesorcery-mcp": {
       "url": "http://127.0.0.1:8000/mcp", // Use your custom host, port, and path if specified
       "transportType": "http",
       "autoApprove": ["blur", "change_color", "config", "crop", "detect", "draw_arrows", "draw_circles", "draw_lines", "draw_rectangles", "draw_texts", "fill", "find", "get_metainfo", "ocr", "overlay", "resize", "rotate"],
       "timeout": 100
     }
+ }
 }
 ```
 </details>
@@ -271,25 +277,29 @@ Add to your MCP client these settings.
 
 **For pipx installation (recommended):**
 ```json
-"mcpServers": {
+{
+ "mcpServers": {
     "imagesorcery-mcp": {
       "command": "imagesorcery-mcp.exe",
       "transportType": "stdio",
       "autoApprove": ["blur", "change_color", "config", "crop", "detect", "draw_arrows", "draw_circles", "draw_lines", "draw_rectangles", "draw_texts", "fill", "find", "get_metainfo", "ocr", "overlay", "resize", "rotate"],
       "timeout": 100
     }
+ }
 }
 ```
 
 **For manual venv installation:**
 ```json
-"mcpServers": {
+{
+ "mcpServers": {
     "imagesorcery-mcp": {
       "command": "C:\\full\\path\\to\\venv\\Scripts\\imagesorcery-mcp.exe",
       "transportType": "stdio",
       "autoApprove": ["blur", "change_color", "config", "crop", "detect", "draw_arrows", "draw_circles", "draw_lines", "draw_rectangles", "draw_texts", "fill", "find", "get_metainfo", "ocr", "overlay", "resize", "rotate"],
       "timeout": 100
     }
+ }
 }
 ```
 </details>
